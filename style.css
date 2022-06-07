@@ -11,6 +11,9 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+body {
+    background-image: linear-gradient(to top, rgba(0, 198, 251, 0.51) 0%, rgba(0, 91, 234, 0.35) 100%);
+}
 
 .container {
     display: flex;
@@ -19,4 +22,31 @@ html, body {
     justify-content: space-evenly;
     gap: 20px;
     width: max-content;
+    position: relative;
+}
+
+.error {
+    position: absolute;
+    background: #ffacac;
+    width: max-content;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div > .hidden {
+ display: none;
+}
+
+.wrapper {
+    height: 100%;
+    width: max-content;
+    padding: 50px;
+    background: rgba(246, 251, 255, 0.77);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

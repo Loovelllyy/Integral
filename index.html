@@ -7,30 +7,44 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="container">
-    <label class="form-label">
-        <p>Choice method of input</p>
-        <select class="form-select" name="selectInput" id="select">
-            <option value="notFile" selected>manual input</option>
-            <option value="file">file</option>
-        </select>
-    </label>
-    <div class="" id="manualInput">
-        <div class="input-group">
-            <span class="input-group-text">Input function:</span>
-            <input id="f" type="text" class="form-control" aria-label="With textarea">
+<div class="wrapper">
+    <div class="container" id="">
+        <h2>Calculate defined integral</h2>
+        <label class="form-label">
+            <p>Choice method of input</p>
+            <select class="form-select" name="selectInput" id="select">
+                <option value="notFile" selected>manual input</option>
+                <option value="file">file</option>
+            </select>
+        </label>
+        <div id="manualInput">
+            <div class="input-group">
+                <span class="input-group-text">Input function:</span>
+                <input id="f" type="text" class="form-control" aria-label="With textarea">
+            </div>
+            <br>
+            <div>
+                <input id="top" type="number" class="form-control" style="width: 100px;">
+                <span style="font-size: 96px">∫</span> <span style="font-size: 58px" id="formula">() dx</span>
+                <input id="bottom" type="number" class="form-control" style="width: 100px;">
+            </div>
         </div>
-        <br>
-        <div>
-            <input id="top" type="number" class="form-control" style="width: 100px;">
-            <span style="font-size: 96px">∫</span> <span style="font-size: 58px" id="formula">() dx</span>
-            <input id="bottom" type="number" class="form-control" style="width: 100px;">
+
+        <div class="hidden" id="fileInput">
+            <input id="input-b2" name="input-b2" type="file" class="file" data-show-preview="false">
+            <p id="topPar" type="number" class="form-control" style="width: 100px;  margin-top: 20px; margin-bottom: 0">0</p>
+            <span style="font-size: 96px">∫</span> <span style="font-size: 58px" id="formula2">() dx</span>
+            <p id="bottomPar" type="number" class="form-control" style="width: 100px;">0</p>
+        </div>
+
+        <div id="resBtn" class="btn btn-primary ">Give me ReSulT</div>
+        <div id="resBtn2" class="btn btn-primary hidden">Give me ReSulT</div>
+        <p id="res"></p>
+        <div class="error hidden">
+            <p>Something was wrong! Check input data, please</p>
+            <button id="cancel" class="btn btn-danger">Cancel</button>
         </div>
     </div>
-<!--    <div class="" id="fileInput">-->
-
-<!--    </div>-->
-    <button class="btn btn-primary">Give me ReSulT</button>
 </div>
 
 <script src="index.js"></script>
