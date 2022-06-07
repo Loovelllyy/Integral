@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcilate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <label class="form-label">
+        <p>Choice method of input</p>
+        <select class="form-select" name="selectInput" id="select">
+            <option value="notFile" selected>manual input</option>
+            <option value="file">file</option>
+        </select>
+    </label>
+    <div class="" id="manualInput">
+        <div class="input-group">
+            <span class="input-group-text">Input function:</span>
+            <input id="f" type="text" class="form-control" aria-label="With textarea">
+        </div>
+        <br>
+        <div>
+            <input id="top" type="number" class="form-control" style="width: 100px;">
+            <span style="font-size: 96px">∫</span> <span style="font-size: 58px" id="formula">() dx</span>
+            <input id="bottom" type="number" class="form-control" style="width: 100px;">
+        </div>
+    </div>
+<!--    <div class="" id="fileInput">-->
+
+<!--    </div>-->
+    <button class="btn btn-primary">Give me ReSulT</button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
